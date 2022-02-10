@@ -64,8 +64,8 @@ class WhatsAppController extends Controller
         }
         
         $curl = curl_init();
-        $idInstancia=env('ID_INSTANCIA','');
-        $idToken=env('ID_TOKEN','');
+        $idInstancia=config('chatapi.ID_INSTANCIA');
+        $idToken=config('chatapi.ID_TOKEN');
 
         curl_setopt_array($curl, array(
         CURLOPT_URL => "https://api.ultramsg.com/".$idInstancia."/messages/chat",
