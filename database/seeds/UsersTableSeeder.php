@@ -32,7 +32,7 @@ class UsersTableSeeder extends Seeder
         Role::firstOrCreate(['name' => 'Cliente']);
         Role::firstOrCreate(['name' => 'Vendedor']);
         $role->givePermissionTo(Permission::all());
-        $email_admin=env('EMAIL_ADMIN','');
+        $email_admin=env('EMAIL_ADMIN','admin@gmail.com');
         $user=User::where('email',$email_admin)->first();
         if(!$user){
             $user= User::firstOrCreate([
@@ -48,7 +48,7 @@ class UsersTableSeeder extends Seeder
         }
         
       
-        $email_cliente=env('EMAIL_CLIENTE','');
+        $email_cliente=env('EMAIL_CLIENTE','consumidor_final@gmail.com');
         if(!User::where('email',$email_cliente)->first()){
             $consumidor= User::firstOrCreate([
                 'name' => 'Consumidor Final',
