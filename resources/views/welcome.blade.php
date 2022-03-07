@@ -1,21 +1,27 @@
 @extends('layouts.app',['title'=>'Inicio'])
 
 @section('content')
-<div style="height: 100vh">
-    <div class="flex-center flex-column">
-      <h5 class="animated fadeIn mb-3">
-        CONTROL DE INVENTARIOS Y FACTURACIÓN MEDIANTE UNA APLICACIÓN WEB PARA LA DISTRIBUIDORA BISONTE Y NOTIFICACIONES POR MENSAJE DE TEXTO MEDIANTE WHATSAPP.
-      </h5>
-      <p class="animated fadeIn text-muted">
-          Elaborado por:
-      </p>
-      <p>Jordan Stalin Cajamarca Palomo – Diana Katherine Loachamin Tito</p>
-    </div>
+<!-- Container -->
+<div class="flex-fill">
+
+  <!-- Error title -->
+  <div class="text-center mb-4">
+    <img src="{{ asset('img/lolok.png') }}" class="img-fluid mb-4" width="300" alt="">
+    <h1 class="display-3 font-weight-semibold line-height-1 mb-2">BISONTE</h1>
+    <h4>CONTROL DE INVENTARIOS Y FACTURACIÓN MEDIANTE UNA APLICACIÓN WEB PARA LA DISTRIBUIDORA BISONTE Y NOTIFICACIONES POR MENSAJE DE TEXTO MEDIANTE WHATSAPP.</h4>
+    <span>Elaborado por:</span>
+    <i>
+      Jordan Stalin Cajamarca Palomo – Diana Katherine Loachamin Tito
+    </i>
   </div>
+  <!-- /error title -->
+
+</div>
+<!-- /container -->
   @prepend('linksPie')
-    <script>
-    $('#menuInicio').addClass('active');
-    </script>
-    
-@endprepend
+      <script>
+      $('#menuInicio').addClass('active');
+      </script>
+      
+  @endprepend
 @endsection

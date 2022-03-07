@@ -6,16 +6,17 @@
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
+                <img src="{{ asset('img/login.jpg') }}" height="350" class="card-img-top" alt="...">
                 <div class="card-header">{{ __('Login') }}</div>
 
                 <div class="card-body">
                     <form method="POST" action="{{ route('login') }}">
                         @csrf
 
-                        <div class="alert alert-info" role="alert">
+                        {{-- <div class="alert alert-info" role="alert">
                             <strong>Email:</strong>admin@gmail.com <br>
                             <strong>Contraseña:</strong>admin@gmail.com
-                        </div>
+                        </div> --}}
                         <div class="form-group row">
                             <label for="email" class="col-md-4 col-form-label text-md-right">{{ __('E-Mail Address') }}</label>
 

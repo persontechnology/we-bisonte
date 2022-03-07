@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\DataTables\UsuariosDataTable;
+use App\Http\Requests\RqGuardarUsuario;
 use Illuminate\Http\Request;
 use App\User;
 use Illuminate\Support\Facades\DB;
@@ -26,17 +27,9 @@ class Usuarios extends Controller
         return view('usuarios.nuevo');
     }
 
-    public function guardar(Request $request)
+    public function guardar(RqGuardarUsuario $request)
     {
-        $request->validate([
-            'identificacion' => 'required|unique:users|max:255',
-            'apellidos' => 'required|string|max:255',
-            'nombres' => 'required|string|max:255',
-            'telefono' => 'required|string|max:255',
-            'direccion' => 'required|string|max:255',
-            'email' => 'nullable|string|email|max:255|unique:users',
-            'password' => 'nullable|string|min:8',
-        ]);
+        
         $user=new User();
         $user->identificacion=$request->identificacion;
         $user->apellidos=$request->apellidos;

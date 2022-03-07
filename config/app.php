@@ -185,6 +185,9 @@ return [
         // spatie
         Barryvdh\Snappy\ServiceProvider::class,
 
+        // tabo ecuaro validate cedula ruc
+        Tavo\EcLaravelValidator\EcValidatorServiceProvider::class,
+
 
     ],
 

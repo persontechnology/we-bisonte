@@ -1,12 +1,12 @@
 <?php return array (
   'root' => 
   array (
-    'pretty_version' => 'dev-master',
-    'version' => 'dev-master',
+    'pretty_version' => 'dev-main',
+    'version' => 'dev-main',
     'aliases' => 
     array (
     ),
-    'reference' => '6cf709c40d4df6f15886aef7e26b0a8d78dec375',
+    'reference' => '97bc6417761fd9470097d0323aa1d98cee02a5ee',
     'name' => 'laravel/laravel',
   ),
   'versions' => 
@@ -462,12 +462,12 @@
     ),
     'laravel/laravel' => 
     array (
-      'pretty_version' => 'dev-master',
-      'version' => 'dev-master',
+      'pretty_version' => 'dev-main',
+      'version' => 'dev-main',
       'aliases' => 
       array (
       ),
-      'reference' => '6cf709c40d4df6f15886aef7e26b0a8d78dec375',
+      'reference' => '97bc6417761fd9470097d0323aa1d98cee02a5ee',
     ),
     'laravel/tinker' => 
     array (
@@ -1269,6 +1269,24 @@
       array (
       ),
       'reference' => '46a942903059b0b05e601f00eb64179e05578c0f',
+    ),
+    'tavo1987/ec-validador-cedula-ruc' => 
+    array (
+      'pretty_version' => 'v1.0.2',
+      'version' => '1.0.2.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '379b50bc5dfda20d935df2bdd3c0de94e4fc024e',
+    ),
+    'tavo1987/laravel-ec-validator' => 
+    array (
+      'pretty_version' => 'v2.0.0',
+      'version' => '2.0.0.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '4d6d7dd4af2df6a3b51f9e192ef530934edd8e45',
     ),
     'theseer/tokenizer' => 
     array (

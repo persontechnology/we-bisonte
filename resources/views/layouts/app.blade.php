@@ -198,7 +198,7 @@
 
 
 				<!-- Content area -->
-				<div class="content container pt-0" id="pantallaGrande">
+				<div class="content container pt-0 {{ request()->routeIs('welcome')?'d-flex justify-content-center align-items-center':'' }}" id="pantallaGrande">
                     @if ($errors->any())
                     <div class="container">
                         <div class="row justify-content-center">

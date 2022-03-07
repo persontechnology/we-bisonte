@@ -130,6 +130,8 @@ class ComposerStaticInit5e30f6f7517aa6072c9b80ec27ae2a86
         array (
             'TijsVerkoyen\\CssToInlineStyles\\' => 31,
             'Tests\\' => 6,
+            'Tavo\\EcLaravelValidator\\' => 24,
+            'Tavo\\' => 5,
         ),
         'S' => 
         array (
@@ -304,6 +306,14 @@ class ComposerStaticInit5e30f6f7517aa6072c9b80ec27ae2a86
         'Tests\\' => 
         array (
             0 => __DIR__ . '/../..' . '/tests',
+        ),
+        'Tavo\\EcLaravelValidator\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/tavo1987/laravel-ec-validator/src',
+        ),
+        'Tavo\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/tavo1987/ec-validador-cedula-ruc/src',
         ),
         'Symfony\\Polyfill\\Php80\\' => 
         array (
@@ -5346,6 +5356,9 @@ class ComposerStaticInit5e30f6f7517aa6072c9b80ec27ae2a86
         'Symfony\\Polyfill\\Php72\\Php72' => __DIR__ . '/..' . '/symfony/polyfill-php72/Php72.php',
         'Symfony\\Polyfill\\Php73\\Php73' => __DIR__ . '/..' . '/symfony/polyfill-php73/Php73.php',
         'Symfony\\Polyfill\\Php80\\Php80' => __DIR__ . '/..' . '/symfony/polyfill-php80/Php80.php',
+        'Tavo\\EcLaravelValidator\\EcValidatorServiceProvider' => __DIR__ . '/..' . '/tavo1987/laravel-ec-validator/src/EcValidatorServiceProvider.php',
+        'Tavo\\EcLaravelValidator\\LaravelValidatorEc' => __DIR__ . '/..' . '/tavo1987/laravel-ec-validator/src/LaravelValidatorEc.php',
+        'Tavo\\ValidadorEc' => __DIR__ . '/..' . '/tavo1987/ec-validador-cedula-ruc/src/ValidadorEc.php',
         'Tests\\CreatesApplication' => __DIR__ . '/../..' . '/tests/CreatesApplication.php',
         'Tests\\Feature\\ExampleTest' => __DIR__ . '/../..' . '/tests/Feature/ExampleTest.php',
         'Tests\\TestCase' => __DIR__ . '/../..' . '/tests/TestCase.php',
