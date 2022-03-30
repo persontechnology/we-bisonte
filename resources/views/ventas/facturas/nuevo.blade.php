@@ -49,7 +49,7 @@
                             <div class="col">
 
                             <div class="md-form input-group">
-                                <input type="text" value="{{ $consumidor->identificacion??'' }}" id="txt_identificacion" name="identificacion" class="form-control" aria-describedby="MaterialButton-addon4" required>
+                                <input type="number" value="{{ $consumidor->identificacion??'' }}" id="txt_identificacion" name="identificacion" class="form-control" aria-describedby="MaterialButton-addon4" required>
                                 <label for="txt_identificacion">Identificación</label>
                                 <div class="input-group-append" id="MaterialButton-addon4">
                                     <button class="btn btn-md btn-primary m-0 px-3" onclick="buscarCliente(this);" type="button">
@@ -88,7 +88,7 @@
                             </div>
                             <div class="col">
                                 <div class="md-form md-outline my-0">
-                                    <input type="text" value="{{ $consumidor->telefono??'' }}" id="txt_telefono" name="telefono" class="form-control">
+                                    <input type="number" value="{{ $consumidor->telefono??'' }}" id="txt_telefono" name="telefono" class="form-control">
                                     <label for="txt_telefono">Teléfono:</label>
                                 </div>
                             </div>
@@ -150,6 +150,11 @@
                                                 <input type="radio" class="custom-control-input" id="check_tarjeta_c_d" name="forma_pago" value="Tarjeta de crédito/débito">
                                                 <label class="custom-control-label" for="check_tarjeta_c_d">Tarjeta de crédito/débito</label>
                                             </div>
+                                            <div class="custom-control custom-radio">
+                                                <input type="radio" class="custom-control-input" id="check_transferencia_ba" name="forma_pago" value="Transferencia Bancaria">
+                                                <label class="custom-control-label" for="check_transferencia_ba">Transferencia Bancaria</label>
+                                            </div>
+                                            
                                             <div class="custom-control custom-radio">
                                                 <input type="radio" class="custom-control-input" id="check_otros" name="forma_pago" value="Otros">
                                                 <label class="custom-control-label" for="check_otros">Otros</label>

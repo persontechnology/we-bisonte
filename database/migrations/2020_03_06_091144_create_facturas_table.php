@@ -18,7 +18,7 @@ class CreateFacturasTable extends Migration
             $table->timestamps();
             $table->string('numero');
             $table->enum('estado',['Entregado','Anulado'])->default('Entregado');
-            $table->enum('forma_pago',['Efectivo','Dinero Electrónico','Tarjeta crédito/débito','Cheque','Otros'])->default('Efectivo');
+            $table->enum('forma_pago',['Efectivo','Dinero Electrónico','Tarjeta crédito/débito','Cheque','Transferencia Bancaria','Otros'])->default('Efectivo');
             $table->text('observacion')->nullable();
             $table->decimal('iva')->default(0);
             $table->decimal('total_factura')->default(0);

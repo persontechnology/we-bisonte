@@ -28,7 +28,7 @@
                         <div class="form-row">
                             <div class="col">
                                 <div class="md-form md-outline my-1">
-                                    <input id="ruc" name="ruc" class="form-control @error('ruc') is-invalid @enderror" value="{{ old('ruc',$empresa->ruc) }}"  required  type="text">
+                                    <input id="ruc" name="ruc" class="form-control @error('ruc') is-invalid @enderror" value="{{ old('ruc',$empresa->ruc) }}"  required  type="number">
                                     <label for="ruc">Ruc<i class="text-danger">*</i></label>
                                     @error('ruc')
                                         <span class="invalid-feedback" role="alert">
@@ -55,7 +55,7 @@
                         <div class="form-row">
                             <div class="col">
                                 <div class="md-form md-outline my-1">
-                                    <input id="telefono" name="telefono" class="form-control @error('telefono') is-invalid @enderror" value="{{ old('telefono',$empresa->telefono) }}"  required  type="text">
+                                    <input id="telefono" name="telefono" class="form-control @error('telefono') is-invalid @enderror" value="{{ old('telefono',$empresa->telefono) }}"  required  type="number">
                                     <label for="telefono">Teléfono<i class="text-danger">*</i></label>
                                     @error('telefono')
                                         <span class="invalid-feedback" role="alert">
@@ -66,7 +66,7 @@
                             </div>
                             <div class="col">
                                 <div class="md-form md-outline my-1">
-                                    <input id="email" name="email" class="form-control @error('email') is-invalid @enderror" value="{{ old('email',$empresa->email) }}" required type="text">
+                                    <input id="email" name="email" class="form-control @error('email') is-invalid @enderror" value="{{ old('email',$empresa->email) }}" required type="email">
                                     <label for="email">Email<i class="text-danger">*</i></label>
                                     @error('email')
                                         <span class="invalid-feedback" role="alert">
@@ -80,7 +80,7 @@
                         <div class="form-row">
                             <div class="col">
                                 <div class="md-form md-outline my-1">
-                                    <input id="celular" name="celular" class="form-control @error('celular') is-invalid @enderror" value="{{ old('celular',$empresa->celular) }}"  required  type="text">
+                                    <input id="celular" name="celular" class="form-control @error('celular') is-invalid @enderror" value="{{ old('celular',$empresa->celular) }}"  required  type="number">
                                     <label for="celular">Celular<i class="text-danger">*</i></label>
                                     @error('celular')
                                         <span class="invalid-feedback" role="alert">

@@ -63,11 +63,7 @@
                 
                     <span>
                         <strong>Forma de pago:</strong>
-                        Efectivo ({{ $factura->forma_pago=='Efectivo'?'x':' ' }}) 
-                        Dinero Electrónico ({{ $factura->forma_pago=='Dinero Electrónico'?'x':' ' }}) 
-                        Tarjeta crédito/débito ({{ $factura->forma_pago=='Tarjeta crédito/débito'?'x':' ' }}) 
-                        Cheque ({{ $factura->forma_pago=='Cheque'?'x':' ' }}) 
-                        Otros ({{ $factura->forma_pago=='Otros'?'x':' ' }}) 
+                        {{ $factura->forma_pago }}
                     </span><hr class="new3">
                 
             </td>

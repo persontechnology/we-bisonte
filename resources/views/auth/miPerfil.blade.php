@@ -15,7 +15,7 @@
                         
 
                         <div class="md-form md-outline my-1">
-                            <input type="text" id="identificacion" name="identificacion" class="form-control @error('identificacion') is-invalid @enderror " value="{{ old('identificacion',$user->identificacion) }}" required>
+                            <input type="number" id="identificacion" name="identificacion" class="form-control @error('identificacion') is-invalid @enderror " value="{{ old('identificacion',$user->identificacion) }}" required>
                             <label for="identificacion">Identificación<i class="text-danger">*</i></label>
                             @error('identificacion')
                                 <span class="invalid-feedback" role="alert">

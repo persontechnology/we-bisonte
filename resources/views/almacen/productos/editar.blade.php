@@ -53,7 +53,7 @@
                             </div>
                             <div class="col">
                                 <div class="md-form md-outline my-1">
-                                    <input id="cantidad" name="cantidad" class="form-control @error('cantidad') is-invalid @enderror" value="{{ old('cantidad',$pro->cantidad) }}" type="text" required>
+                                    <input id="cantidad" name="cantidad" class="form-control @error('cantidad') is-invalid @enderror" value="{{ old('cantidad',$pro->cantidad) }}" type="number" required>
                                     <label for="cantidad">Cantidad<i class="text-danger">*</i></label>
                                     @error('cantidad')
                                         <span class="invalid-feedback" role="alert">
@@ -69,7 +69,7 @@
                         <div class="form-row">
                             <div class="col">
                                 <div class="md-form md-outline my-1">
-                                    <input id="precio_compra" name="precio_compra" class="form-control @error('precio_compra') is-invalid @enderror" value="{{ old('precio_compra',$pro->precio_compra) }}"  required  type="text">
+                                    <input id="precio_compra" name="precio_compra" class="form-control @error('precio_compra') is-invalid @enderror" value="{{ old('precio_compra',$pro->precio_compra) }}"  required  type="number">
                                     <label for="precio_compra">Precio de compra<i class="text-danger">*</i></label>
                                     @error('precio_compra')
                                         <span class="invalid-feedback" role="alert">
@@ -80,7 +80,7 @@
                             </div>
                             <div class="col">
                                 <div class="md-form md-outline my-1">
-                                    <input id="precio_venta" name="precio_venta" class="form-control @error('precio_venta') is-invalid @enderror" value="{{ old('precio_venta',$pro->precio_venta) }}" required type="text">
+                                    <input id="precio_venta" name="precio_venta" class="form-control @error('precio_venta') is-invalid @enderror" value="{{ old('precio_venta',$pro->precio_venta) }}" required type="number">
                                     <label for="precio_venta">Precio de venta<i class="text-danger">*</i></label>
                                     @error('precio_venta')
                                         <span class="invalid-feedback" role="alert">
@@ -95,7 +95,7 @@
                             <div class="col">
                                 <div class="md-form md-outline my-1">
                                     <input id="talla" name="talla" class="form-control @error('talla') is-invalid @enderror" value="{{ old('talla',$pro->talla) }}"  required  type="text">
-                                    <label for="talla">Talla<i class="text-danger">*</i></label>
+                                    <label for="talla">Tamaño<i class="text-danger">*</i></label>
                                     @error('talla')
                                         <span class="invalid-feedback" role="alert">
                                             <strong>{{ $message }}</strong>

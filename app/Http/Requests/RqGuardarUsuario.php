@@ -37,6 +37,8 @@ class RqGuardarUsuario extends FormRequest
             'direccion' => 'required|string|max:255',
             'email' => 'nullable|string|email|max:255|unique:users',
             'password' => 'nullable|string|min:8',
+            'roles'=>'nullable|array',
+            'roles.*'=>'nullable|exists:roles,id'
         ];
     }
 }

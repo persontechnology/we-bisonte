@@ -97,7 +97,20 @@
                             </div>
                         </div>
 
+                        <div class="form-group border">
+                            <label class="mx-2" for="">Selecione rol:</label> <br>
 
+                            @foreach ($roles as $rol)
+                            
+                                <div class="custom-control custom-checkbox custom-control-inline mx-2">
+                                    <input type="checkbox" class="custom-control-input"name="roles[{{ $rol->id }}]"  value="{{ $rol->id }}"  {{ old('roles.'.$rol->id)==$rol->id ?'checked':'' }} id="rol_{{ $rol->id }}">
+                                    <label class="custom-control-label" for="rol_{{ $rol->id }}">
+                                        {{ $rol->name }}
+                                    </label>
+                                </div>
+
+                            @endforeach
+                        </div>
 
                         <!-- Sign up button -->
                         <button class="btn btn-primary my-2 btn-block" type="submit">Guardar</button>
