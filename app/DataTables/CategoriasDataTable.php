@@ -34,7 +34,7 @@ class CategoriasDataTable extends DataTable
      */
     public function query(Categoria $model)
     {
-        return $model->newQuery();
+        return $model->newQuery()->orderBy('nombre','asc');
     }
 
     /**

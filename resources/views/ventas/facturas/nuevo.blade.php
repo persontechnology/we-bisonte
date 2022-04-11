@@ -141,7 +141,7 @@
                                                 <label class="custom-control-label" for="check_cheque">Cheque</label>
                                             </div>
             
-                                            <div class="custom-control custom-radio">
+                                            {{-- <div class="custom-control custom-radio">
                                                 <input type="radio" class="custom-control-input" id="check_dinero_electronico" name="forma_pago" value="Dinero Electrónico">
                                                 <label class="custom-control-label" for="check_dinero_electronico">Dinero electrónico</label>
                                             </div>
@@ -149,16 +149,16 @@
                                             <div class="custom-control custom-radio">
                                                 <input type="radio" class="custom-control-input" id="check_tarjeta_c_d" name="forma_pago" value="Tarjeta de crédito/débito">
                                                 <label class="custom-control-label" for="check_tarjeta_c_d">Tarjeta de crédito/débito</label>
-                                            </div>
+                                            </div> --}}
                                             <div class="custom-control custom-radio">
                                                 <input type="radio" class="custom-control-input" id="check_transferencia_ba" name="forma_pago" value="Transferencia Bancaria">
                                                 <label class="custom-control-label" for="check_transferencia_ba">Transferencia Bancaria</label>
                                             </div>
                                             
-                                            <div class="custom-control custom-radio">
+                                            {{-- <div class="custom-control custom-radio">
                                                 <input type="radio" class="custom-control-input" id="check_otros" name="forma_pago" value="Otros">
                                                 <label class="custom-control-label" for="check_otros">Otros</label>
-                                            </div>
+                                            </div> --}}
             
                                         </td>
                                         <td colspan="3">

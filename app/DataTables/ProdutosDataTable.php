@@ -48,7 +48,7 @@ class ProdutosDataTable extends DataTable
      */
     public function query(Producto $model)
     {
-        return $model->newQuery();
+        return $model->newQuery()->orderBy('codigo','asc');
     }
 
     /**
